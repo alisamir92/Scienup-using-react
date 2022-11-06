@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Front End for Scienup web app using React, Bootstrap, and Sass
 
+The app is deployed on Netlify [https://scienup.netlify.app/]
+
 ## Available Scripts
 
 In the project directory, you can run:
