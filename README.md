@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 
-Front End for Scienup web app using React, Bootstrap, ans Sass
+Front End for Scienup web app using React, Bootstrap, and Sass
 
 ## Available Scripts
 
