@@ -1,0 +1,153 @@
+@import "../mixins/item.scss";
+
+.shop-main{
+    margin-top:  30px;
+    background-color: $body-bk;
+    .shop{
+        background-color: $fourth-fcolor;
+        margin: 30px 60px;
+        @media (min-width:$laptop) {
+            
+            margin: 50px 90px;
+        }
+
+        .items-grid{
+            .items-div{
+                padding-top: 20px;
+                .item-col{
+                    margin-bottom: 30px;
+
+                }
+                @include item();
+            }
+    
+    
+            .pagination-div{
+                .pagination{
+
+                    justify-content: center;
+                    margin-top: 20px;
+
+                    .page-item{
+                        margin: 2px;
+                        
+                        span{
+                            visibility: hidden;
+                        }
+                        .visually-hidden{
+                            position:relative !important ;
+                            visibility: visible;
+                            
+                        }
+                        a{
+
+                            border-radius: 50%;
+                            border: solid 2px $sec-fcolor;
+                            &:hover{
+                                border:solid 2px $primary-fcolor;
+                            }
+                        }
+                    }
+                    .next, .previous{
+                        a{
+
+                            border-radius: 30%;
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .populars{
+
+            .products{
+                margin-top: 50px;
+                color: $primary-fcolor;
+                .popular-products, .tags{
+                    margin-bottom: 50px;
+                }
+                .tags{
+                    .buttons{
+                        button{
+                            height: 30px;
+                            margin: 5px 5px 5px 0px;
+                            background-color: $fourth-fcolor;
+                            border: solid 2px $sec-fcolor;
+                            border-radius: 10px;
+                            padding: 5px 20px;
+                            a{
+                                color: $sec-fcolor;
+                                font-weight:lighter;
+                            }
+                        }
+                    }
+                }
+                .statistics{
+                    p{
+                        font-size: 13px;
+                        color: $fifth-fcolor;
+                        font-weight: bold;
+                    }
+                }
+                .input{
+                    border: 1px solid gray;
+                    margin-bottom: 30px;
+                    
+                    padding: 0px;
+                    .search{
+                        margin: 0px;
+                        .form-control{
+                            border:none;
+                            box-shadow: none;
+                            width: auto;
+                            display: inline;
+                            width: 80%;
+                            @media (min-width: $tablet) {
+                                width: 90%;
+                            }
+                            @media (min-width: $laptop) {
+                                width: 80%;
+                            }
+                           
+                        }
+                        a{
+                            color: $primary-fcolor;
+                            margin-right: 2%;
+                            margin-top: 1%;
+                            float: right;
+                            svg{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+                h6{
+                    font-weight: bold;
+                    font-size: 13px;
+                }
+                div{
+                    a{
+                        text-decoration: none;
+                        color: $primary-fcolor;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+                    div{
+                        font-size: 12px;
+                        margin-top: 10px;
+                    }
+                }
+                img{
+                    width: 30px;
+                    height: 30px;
+                    float: right;
+                }
+                hr{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

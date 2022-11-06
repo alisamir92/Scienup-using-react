@@ -1,0 +1,121 @@
+@import "../mixins/item";
+
+.single-equipment{
+    margin-top:  30px;
+    background-color: $body-bk;
+    .single-equipment-desc{
+        padding: 50px 30px;
+        background-color: $fourth-fcolor;
+        font-size: 15px;
+        margin: 30px 30px;
+        @media(min-width: $laptop){
+
+            margin: 50px 90px;
+        }
+        img{
+            width: 250px;
+            height: 250px;
+            @media(min-width: $tablet){
+                width: 300px;
+            }
+        }
+        .description, .reviews{
+            height: 40px;
+            width: 125px;
+            background-color: $fourth-fcolor;
+            border: solid 2px $fifth-fcolor;
+            border-radius: 30px;
+            margin-right: 10px;
+            margin-top: 10px;
+            a{
+                color: $fifth-fcolor;
+            }
+        }
+        .reviews{
+            border: solid 2px $primary-fcolor;
+                    a{
+                        color: $primary-fcolor;
+                    }
+        }
+
+        .details{
+            @media(max-width:$laptop){
+
+                margin-top: 30px;
+            }
+            hr{
+            @media (min-width: $laptop){
+                width: 250px;
+            }
+            }
+            div{
+                font-size: 12px;
+            }
+            a{
+                color: $primary-fcolor;
+                font-weight: bold;
+                text-decoration: none;
+                &:hover{
+                    color: $third-fcolor;
+                }
+            }
+            .item-add, .price{
+                margin: 5px;
+                color: $fifth-fcolor;
+            }
+            div{
+                &:nth-child(2){
+                font-size: 18px;
+                }
+                &:nth-child(3){
+                    input{
+                        font-size: 15px;
+                        border: solid 1px $primary-fcolor;
+                        border-radius: 5px;
+                        // padding: 8px 25px;
+                        display: inline;
+                        width: 60px;
+                    }
+                    button{
+                        margin-left: 10px;
+                        height: 30px;
+                        width: 150px;
+                        background-color: #cb3818;
+                        border-radius: 35px;
+                        a{
+                            color: $fourth-fcolor;
+                            
+                        }
+                        
+                    }
+                }
+            }
+            .item-details{
+                h3{
+                    font-size: 12px;
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        .may-like, .popular-product{
+            h3{
+                text-align: center;
+                font-weight: bold;
+                margin: 20px 0px;
+                color: $primary-fcolor;
+            }
+            .item-col{
+                margin-bottom: 30px;
+
+            }
+        }
+        .may-like{
+            @include item()
+        }
+        .popular-product{
+            @include item()
+        }
+    }
+}

@@ -1,0 +1,25 @@
+#root{
+  background-color: $footer-bk;
+}
+
+
+* {
+    box-sizing: border-box;
+    
+  }
+  
+//   *:focus {
+//     outline: none !important;
+// }
+  ul, p{
+    list-style: none;
+    a{
+        text-decoration: none;
+    }
+  }
+  body{
+      // background-color: $body-bk;
+      font-family: $main-font !important;
+  }
+  
+  

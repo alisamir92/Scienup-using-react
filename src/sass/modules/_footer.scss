@@ -1,0 +1,90 @@
+.footer{
+    padding: 90px;
+    background-color: $fourth-fcolor;
+    font-size: 13px;
+    color: $primary-fcolor;
+    a{
+        color: $primary-fcolor;
+        &:hover{
+            color: $third-fcolor;
+        }
+        .svg-inline--fa{
+            margin-right: 15px;
+            width: 20px;
+        }        
+    }
+    h6{
+        font-size: 14px;
+        
+        font-weight: bold;
+        letter-spacing: 1px;    
+        @media (min-width: $laptop) {
+            margin-bottom: 40px;
+        }
+    }
+    ul{
+        padding-left: 0%;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+
+    .connect-list{
+        li{
+           
+            &:first-child{
+                a{
+                    .svg-inline--fa{
+
+                        color: $third-fcolor;}
+                    }
+            }
+            &:nth-child(2){
+                a{
+                    .svg-inline--fa{
+
+                        color: #35b9df;}
+                    }
+            }
+            &:nth-child(3){
+                a{
+                    .svg-inline--fa{
+
+                        color: #3360ba;}
+                    }
+            }
+            &:nth-child(4), &:nth-child(5){
+                a{
+                    .svg-inline--fa{
+
+                        color: #da2713;}
+                    }
+            }
+        }
+    }
+
+    .support-list{
+        li{
+            
+            border-bottom: 1px solid #f2f0f0;
+            padding-bottom: 5px;
+            &::before {
+                color: $third-fcolor;                  
+                content: "\25A0";
+                padding-right: 20px;
+                
+            }
+        }
+    }
+    
+    
+    .blog-item{
+        border-bottom: 1px solid #f2f0f0;
+        padding-bottom: 10px;
+    }
+    .col-lg-3{
+        @media (max-width: $laptop) {
+            margin-bottom: 20px;
+        }
+    }
+}
